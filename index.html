@@ -18,6 +18,12 @@
                     Arial,
                     sans-serif;
                 line-height: 1.4;
+                display: grid;
+                grid-template-columns: 10vw auto 10vw;
+                grid-template-rows: 10vh auto 10vh;
+                grid-template-areas:
+                    ". . ."
+                    ". main .";
             }
         </style>
         <meta charset="UTF-8" />
@@ -45,32 +51,20 @@
         <link rel="manifest" href="/site.webmanifest" />
     </head>
     <body>
-        <div
-            style="
-                display: grid;
-                grid-template-columns: 10vw auto 10vw;
-                grid-template-rows: 10vh auto;
-            "
-        >
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div>
-                <div>🪪 Algrio Santoso</div>
-                <div><br /></div>
-                <div>🛠️ Projects</div>
-                <div>🎮 TBA</div>
-                <div>📱 TBA</div>
-                <div><br /></div>
-                <div>💡 Skills</div>
-                <div>⚙️ C, C++, Rust, Swift, Ruby</div>
-                <div>📚 Bevy, Rapier, Lindera, SwiftUI, Selenium</div>
-                <div>🧰 Unreal, Blender, Supercollider, Krita, XCode, Zed</div>
-                <div><br /></div>
-                <div>🇮🇩 South Jakarta, Indonesia</div>
-                <div>✉️ info at algrio dot com</div>
-            </div>
+        <div style="grid-area: main">
+            <div>🪪 Algrio Santoso</div>
+            <div><br /></div>
+            <div>🛠️ Projects</div>
+            <div>🎮 TBA</div>
+            <div>📱 TBA</div>
+            <div><br /></div>
+            <div>💡 Skills</div>
+            <div>⚙️ C, C++, Rust, Swift, Ruby</div>
+            <div>📚 Bevy, Rapier, Lindera, SwiftUI, Selenium</div>
+            <div>🧰 Unreal, Blender, Supercollider, Krita, XCode, Zed</div>
+            <div><br /></div>
+            <div>🇮🇩 South Jakarta, Indonesia</div>
+            <div>✉️ info at algrio dot com</div>
         </div>
     </body>
 </html>
