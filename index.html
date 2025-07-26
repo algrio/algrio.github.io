@@ -30,6 +30,15 @@
                 grid-template-columns: min-content auto;
                 grid-template-rows: auto;
                 grid-template-areas: "label text";
+                .label {
+                    grid-area: label;
+                }
+                .text {
+                    grid-area: text;
+                }
+                .text::before {
+                    content: "\a0";
+                }
             }
         </style>
         <meta charset="UTF-8" />
@@ -59,36 +68,51 @@
     <body>
         <div style="grid-area: main">
             <div class="bullet">
-                <div style="grid-area: label">
-                    🪪<br />
-                    <br />
-                    🛠️<br />
-                    🎮<br />
-                    📱<br />
-                    <br />
-                    💡<br />
-                    ⚙️<br />
-                    📚<br />
-                    🧰<br />
-                    <br />
-                    🇮🇩<br />
-                    ✉️<br />
-                </div>
-                <div style="grid-area: text">
-                    Algrio Santoso<br />
-                    <br />
-                    Projects<br />
-                    TBA<br />
-                    TBA<br />
-                    <br />
-                    Skills<br />
-                    C, C++, Rust, Swift, Ruby<br />
-                    Bevy, Rapier, Lindera, SwiftUI, Selenium<br />
-                    Unreal, Blender, Supercollider, Krita, XCode, Zed<br />
-                    <br />
-                    South Jakarta, Indonesia<br />
-                    info at algrio dot com<br />
-                </div>
+                <span class="label">🪪</span>
+                <span class="text">Algrio Santoso</span>
+            </div>
+            <br />
+            <div class="bullet">
+                <span class="label">🛠️</span>
+                <span class="text">Projects</span>
+            </div>
+            <div class="bullet">
+                <span class="label">🎮</span>
+                <span class="text">TBA</span>
+            </div>
+            <div class="bullet">
+                <span class="label">📱</span>
+                <span class="text">TBA</span>
+            </div>
+            <br />
+            <div class="bullet">
+                <span class="label">💡</span>
+                <span class="text">Skills</span>
+            </div>
+            <div class="bullet">
+                <span class="label">⚙️</span>
+                <span class="text">C, C++, Rust, Swift, Rub</span>
+            </div>
+            <div class="bullet">
+                <span class="label">📚</span>
+                <span class="text"
+                    >Bevy, Rapier, Lindera, SwiftUI, Selenium
+                </span>
+            </div>
+            <div class="bullet">
+                <span class="label">🧰</span>
+                <span class="text"
+                    >Unreal, Blender, Supercollider, Krita, XCode, Zed
+                </span>
+            </div>
+            <br />
+            <div class="bullet">
+                <span class="label">🇮🇩</span>
+                <span class="text">South Jakarta, Indonesia</span>
+            </div>
+            <div class="bullet">
+                <span class="label">✉️</span>
+                <span class="text">info at algrio dot com</span>
             </div>
         </div>
     </body>
