@@ -25,6 +25,12 @@
                     ". . ."
                     ". main .";
             }
+            .bullet {
+                display: grid;
+                grid-template-columns: min-content auto;
+                grid-template-rows: auto;
+                grid-template-areas: "label text";
+            }
         </style>
         <meta charset="UTF-8" />
         <meta
@@ -52,19 +58,38 @@
     </head>
     <body>
         <div style="grid-area: main">
-            🪪 Algrio Santoso<br />
-            <br />
-            🛠️ Projects<br />
-            🎮 TBA<br />
-            📱 TBA<br />
-            <br />
-            💡 Skills<br />
-            ⚙️ C, C++, Rust, Swift, Ruby<br />
-            📚 Bevy, Rapier, Lindera, SwiftUI, Selenium<br />
-            🧰 Unreal, Blender, Supercollider, Krita, XCode, Zed<br />
-            <br />
-            🇮🇩 South Jakarta, Indonesia<br />
-            ✉️ info at algrio dot com<br />
+            <div class="bullet">
+                <div style="grid-area: label">
+                    🪪<br />
+                    <br />
+                    🛠️<br />
+                    🎮<br />
+                    📱<br />
+                    <br />
+                    💡<br />
+                    ⚙️<br />
+                    📚<br />
+                    🧰<br />
+                    <br />
+                    🇮🇩<br />
+                    ✉️<br />
+                </div>
+                <div style="grid-area: text">
+                    Algrio Santoso<br />
+                    <br />
+                    Projects<br />
+                    TBA<br />
+                    TBA<br />
+                    <br />
+                    Skills<br />
+                    C, C++, Rust, Swift, Ruby<br />
+                    Bevy, Rapier, Lindera, SwiftUI, Selenium<br />
+                    Unreal, Blender, Supercollider, Krita, XCode, Zed<br />
+                    <br />
+                    South Jakarta, Indonesia<br />
+                    info at algrio dot com<br />
+                </div>
+            </div>
         </div>
     </body>
 </html>
