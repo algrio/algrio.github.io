@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Algrio</title>
+        <title>algrio</title>
         <style>
             body {
                 padding: 0;
@@ -27,18 +27,22 @@
             }
             .bullet {
                 display: grid;
-                grid-template-columns: min-content auto;
+                grid-template-columns: min-content 1ch auto;
                 grid-template-rows: auto;
-                grid-template-areas: "label text";
+                grid-template-areas: "label . text";
                 .label {
                     grid-area: label;
                 }
                 .text {
                     grid-area: text;
                 }
-                .text::before {
-                    content: "\a0";
-                }
+            }
+            .unselectable {
+                -moz-user-select: -moz-none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -o-user-select: none;
+                user-select: none;
             }
         </style>
         <meta charset="UTF-8" />
@@ -68,50 +72,50 @@
     <body>
         <div style="grid-area: main">
             <div class="bullet">
-                <span class="label">🪪</span>
+                <span class="label unselectable">🪪</span>
                 <span class="text">Algrio Santoso</span>
             </div>
-            <br />
+            <br class="unselectable" />
             <div class="bullet">
-                <span class="label">🛠️</span>
+                <span class="label unselectable">🛠️</span>
                 <span class="text">Projects</span>
             </div>
             <div class="bullet">
-                <span class="label">🎮</span>
+                <span class="label unselectable">🎮</span>
                 <span class="text">TBA</span>
             </div>
             <div class="bullet">
-                <span class="label">📱</span>
+                <span class="label unselectable">📱</span>
                 <span class="text">TBA</span>
             </div>
-            <br />
+            <br class="unselectable" />
             <div class="bullet">
-                <span class="label">💡</span>
+                <span class="label unselectable">💡</span>
                 <span class="text">Skills</span>
             </div>
             <div class="bullet">
-                <span class="label">⚙️</span>
+                <span class="label unselectable">⚙️</span>
                 <span class="text">C, C++, Rust, Swift, Ruby</span>
             </div>
             <div class="bullet">
-                <span class="label">📚</span>
+                <span class="label unselectable">📚</span>
                 <span class="text"
                     >Bevy, Rapier, Lindera, SwiftUI, Selenium
                 </span>
             </div>
             <div class="bullet">
-                <span class="label">🧰</span>
+                <span class="label unselectable">🧰</span>
                 <span class="text"
                     >Unreal, Blender, Supercollider, Krita, XCode, Zed
                 </span>
             </div>
-            <br />
+            <br class="unselectable" />
             <div class="bullet">
-                <span class="label">🇮🇩</span>
+                <span class="label unselectable">🇮🇩</span>
                 <span class="text">South Jakarta, Indonesia</span>
             </div>
             <div class="bullet">
-                <span class="label">✉️</span>
+                <span class="label unselectable">✉️</span>
                 <span class="text">info at algrio dot com</span>
             </div>
         </div>
